@@ -35,7 +35,6 @@
 } */
 
 .navbar {
-  background-color: white;
   min-height: 3.25rem;
   position: relative;
 }
@@ -392,6 +391,6 @@ a.navbar-item.is-active,
 
   .navbar-item.has-dropdown:hover .navbar-link,
   .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: whitesmoke;
+    background-color: black;
   }
 }
