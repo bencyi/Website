@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Benjamin Yi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/78e587dcb6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/helpers.css">
+    <style>
+        .navbar {
+            box-shadow: none;
+            background-color: transparent;
+            background-image: none;
+        }
+
+        .icon {
+            fill: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+            <div class="column left">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        My nice app
+                    </a>
+                    <a class="navbar-item is-hidden-desktop" href="https://github.com/RuinSain" target="_blank">
+                        <span class="icon" style="color: #333;">
+                            <i class="fa fa-github"></i>
+                        </span>
+                    </a>
+
+                    <div class="navbar-burger burger"
+                        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column center">
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a href="https://www.linkedin.com/in/benjamincyi/" target="_blank" class="navbar-item image">
+                            <img src="images/linkedin.svg">
+                        </a>
+
+                        <a href="https://github.com/bencyi" target="_blank" class="navbar-item image"><img
+                                src="images/github.svg"></a>
+
+                        <a href="images/Resume PDF.pdf" target="_blank" class="navbar-item image"><img
+                                src="images/resume.svg"></a>
+
+                        <a href="https://www.facebook.com/benjamin.chunwoo.yi" target="_blank"
+                            class="navbar-item image"><img src="images/facebook.svg"></a>
+
+                        <a href="mailto:bencyi@me.com" target="_top" class="navbar-item image"><img
+                                src=" images/mail.svg">
+                        </a>
+                        <div class="navbar-dropdown " data-style="width: 18rem;">
+
+                            <a class="navbar-item" href="/2017/03/10/new-field-element/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-info">10 Mar 2017</small>
+                                    </p>
+                                    <p>New field element (for better controls)</p>
+                                </div>
+                            </a>
+
+                            <a class="navbar-item" href="/2016/04/11/metro-ui-css-grid-with-bulma-tiles/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-info">11 Apr 2016</small>
+                                    </p>
+                                    <p>Metro UI CSS grid with Bulma tiles</p>
+                                </div>
+                            </a>
+
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">
+                                <div class="navbar-content">
+                                    <div class="level is-mobile">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <strong>Stay up to date!</strong>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <a class="button is-rss is-small" href="http://bulma.io/atom.xml">
+                                                    <span class="icon is-small">
+                                                        <i class="fa fa-rss"></i>
+                                                    </span>
+                                                    <span>Subscribe</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column right">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="/register">
+                    </a>
+                    <a class="navbar-item" href="/login">
+                        Login
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">User</a>
+                        <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item">My Profile</a>
+                            <a href="#" class="navbar-item" ">Logout</a>
+                            <form id=" logout-form" action="" method="#" style="display: none;"></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <body class="back-row-toggle splat-toggle">
+        <div class="rain front-row"></div>
+        <div class="rain back-row"></div>
+    </body>
+    <!-- partial -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="dist/script.js"></script>
+</body>
+
+</html>
