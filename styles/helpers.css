@@ -1,4 +1,4 @@
-/* .center,
+.center,
 .center-column,
 .top,
 .right,
@@ -32,7 +32,7 @@
 .single-spaced,
 .single-spaced * {
   line-height: 1;
-} */
+}
 
 .navbar {
   min-height: 3.25rem;
@@ -88,7 +88,7 @@
 }
 
 .navbar-burger:hover {
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 .navbar-burger.is-active span {
@@ -235,12 +235,12 @@ a.navbar-item.is-active,
   }
 
   .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-    background-color: black;
+    background-color: whitesmoke;
     color: #0a0a0a;
   }
 
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
-    background-color: black;
+    background-color: whitesmoke;
     color: #00d1b2;
   }
 
