@@ -22,17 +22,18 @@
             background-color: black !important;
         }
 
-        .navbar-item:hover {
+        .navbar-buger {
             background-color: black !important;
         }
 
+        .navbar-item:hover {
+            background-color: #00d1b2 !important;
+        }
+
+
         .mcenter {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            -moz-transform: translateX(-50%) translateY(-50%);
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+            top: 20%;
         }
     </style>
 </head>
@@ -78,13 +79,17 @@
             </div>
         </nav>
     </div>
-                                <header class=" hero-body">
-                                <div class="is-overlay has-text-centered single-spaced" style="top: 82px;">
-                                    <h2 class="title is-1 has-text-white">
-                                        Benjamin Yi</h2>
-                                </div>
-                                </header>
-                                <div class="box mcenter is-mobile">
+                                <div class=" is-overlay has-text-centered single-spaced" style="top: 82px;">
+                                <h2 class="title is-1 has-text-white">
+                                    Benjamin Yi</h2>
+                        </div>
+
+
+
+                        <div class="columns center is-mobile">
+                            <div class="column left"></div>
+                            <div class="column center">
+                                <div class="box is-mobile mcenter">
                                     <article class="media">
                                         <div class="media-left">
                                             <figure class="image is-64x64">
@@ -116,13 +121,17 @@
                                         </div>
                                     </article>
                                 </div>
+                            </div>
+                            <div class="column right"></div>
+                        </div>
 
-                                <body class="back-row-toggle splat-toggle">
-                                    <div class="rain front-row"></div>
-                                    <div class="rain back-row"></div>
-                                </body>
-                                <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-                                <script src="dist/script.js"></script>
+
+                        <body class="back-row-toggle splat-toggle">
+                            <div class="rain front-row"></div>
+                            <div class="rain back-row"></div>
+                        </body>
+                        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                        <script src="dist/script.js"></script>
 </body>
 
 </html>
