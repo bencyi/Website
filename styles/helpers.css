@@ -183,6 +183,9 @@ a.navbar-item.is-active,
   margin: 0.5rem 0;
 }
 
+
+
+/* mobile */
 @media screen and (max-width: 999px) {
   .navbar-brand .navbar-item {
     -webkit-box-align: center;
@@ -192,6 +195,10 @@ a.navbar-item.is-active,
     display: -ms-flexbox;
     display: flex;
     background-color: black !important;
+  }
+
+  .box {
+    font-size: small;
   }
 
   .navbar-menu {
