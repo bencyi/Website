@@ -18,8 +18,21 @@
             box-shadow: none;
         }
 
+        .burger {
+            background-color: black !important;
+        }
+
         .navbar-item:hover {
             background-color: black !important;
+        }
+
+        .mcenter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
         }
     </style>
 </head>
@@ -65,60 +78,44 @@
             </div>
         </nav>
     </div>
-<header class=" hero-body">
+                                <header class=" hero-body">
                                 <div class="is-overlay has-text-centered single-spaced" style="top: 82px;">
                                     <h2 class="title is-1 has-text-white">Benjamin Yi</h2>
                                 </div>
                                 </header>
-                                <div class="box" width="10px">
+                                <div class="box mcenter">
                                     <article class="media">
                                         <div class="media-left">
                                             <figure class="image is-64x64">
-                                                <img src="../images/face.jpg" alt="Image">
+                                                <img src="../images/face.jpg" alt="Image" style="border: 3px solid">
                                             </figure>
                                         </div>
-                                        <div class="media-content">
-                                            <div class="content">
-                                                <p>
+                                        <div class="media-content double-spaced">
+                                            <div class="content is-spaced">
+                                                <p class="has-text-weight-light" style="line-height: 2">
                                                     <strong>Benjamin Yi</strong> <small>@bencyi</small>
                                                     <small>1m</small>
                                                     <br>
-                                                    <br>
-                                                    Hi there! My name is Benjamin Yi, and I am a sophomore at the
-                                                    University of
+                                                    Hi there! My name is Benjamin Yi, and I am a sophomore at
+                                                    the University of
                                                     Maryland, College Park.
                                                     <br>
-                                                    <br>
-                                                    I am currently pursuing a Bachelor's Degree in Computer Science,
-                                                    and plan to minor in Technological Entrepreneurship in the near
-                                                    future.
-                                                    <br>
+                                                    I am currently pursuing a Bachelor's Degree in Computer
+                                                    Science,
+                                                    and plan to minor in Technological Entrepreneurship in the
+                                                    near future.
                                                     <br>
                                                     Please reach out if you have any questions! :)
                                                 </p>
                                             </div>
-                                            <nav class="level is-mobile">
+                                            <nav class="level is-mobile center">
                                                 <div class="level-left">
-                                                    <a class="level-item" aria-label="reply">
-                                                        <span class="icon is-small">
-                                                            <i class="fas fa-reply" aria-hidden="true"></i>
-                                                        </span>
-                                                    </a>
-                                                    <a class="level-item" aria-label="retweet">
-                                                        <span class="icon is-small">
-                                                            <i class="fas fa-retweet" aria-hidden="true"></i>
-                                                        </span>
-                                                    </a>
-                                                    <a class="level-item" aria-label="like">
-                                                        <span class="icon is-small">
-                                                            <i class="fas fa-heart" aria-hidden="true"></i>
-                                                        </span>
-                                                    </a>
                                                 </div>
                                             </nav>
                                         </div>
                                     </article>
                                 </div>
+
 
                                 <body class="back-row-toggle splat-toggle">
                                     <div class="rain front-row"></div>
