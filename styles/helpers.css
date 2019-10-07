@@ -194,7 +194,7 @@ a.navbar-item.is-active,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: black !important;
+    background-color: transparent;
   }
 
   .box {
