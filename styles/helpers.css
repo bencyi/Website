@@ -195,6 +195,7 @@ a.navbar-item.is-active,
     display: -ms-flexbox;
     display: flex;
     background-color: transparent;
+    color: white;
   }
 
   .box {
