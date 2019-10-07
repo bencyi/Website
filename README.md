@@ -11,4 +11,4 @@ Formatted for both web and mobile view using Bulma's navbar and burger features.
 
 # Screenshot
 ![Website View](images/webview.png)
-![Mobile View](images/mobileview.png)
+![Mobile View](images/mobileview.PNG)
