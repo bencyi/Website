@@ -198,6 +198,8 @@ a.navbar-item.is-active,
   }
 
   .box {
+    position: absolute;
+    top: 200px;
     display: flex;
     width: 100%;
   }
