@@ -205,6 +205,7 @@ a.navbar-item.is-active,
     -webkit-box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
+    background-color: black !important;
   }
 
   .navbar-menu.is-active {
