@@ -9,6 +9,9 @@ Formatted for both web and mobile view using Bulma's navbar and burger features.
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
 
-# Screenshot
-![Website View](images/webview)
-![Mobile View](images/mobileview)
+# Screenshots
+
+# Website View
+![Website View](images/webview.png)
+# Mobile View
+![Mobile View](images/mobileview.PNG)
