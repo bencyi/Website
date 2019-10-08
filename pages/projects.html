@@ -5,19 +5,23 @@
     <meta charset="UTF-8" />
     <title>Benjamin Yi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="../styles/project.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://kit.fontawesome.com/78e587dcb6.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="../styles/helpers.css">
 </head>
-
 
 <body>
     <div class="container">
         <nav class="navbar">
             <div class="navbar-brand">
+                <a href="../index.html" class="navbar-item image no-padding" style="color:white   ">
+                    <i class="fas fa-2x fa-home"></i>
+                </a>
                 <div class="navbar-burger burger"
                     onclick="document.querySelector('.navbar-menu').classList.toggle('is-active'); document.querySelector('.navbar-burger').classList.toggle('is-active');">
                     <span></span>
@@ -28,19 +32,17 @@
 
             <div class="navbar-menu">
                 <a href="https://www.linkedin.com/in/benjamincyi/" target="_blank" class="navbar-item image">
-                    <img src="images/linkedin.svg">
+                    <img src="../images/linkedin.svg">
                 </a>
 
                 <a href=" https://github.com/bencyi" target="_blank" class="navbar-item image"><img
-                        src="images/github.svg"></a>
+                        src="../images/github.svg"></a>
 
                 <a href="images/Resume PDF.pdf" target="_blank" class="navbar-item image"><img
-                        src="images/resume.svg"></a>
+                        src="../images/resume.svg"></a>
 
-                <a href="https://www.facebook.com/benjamin.chunwoo.yi" target="_blank" class="navbar-item image"><img
-                        src="images/facebook.svg"></a>
-
-                <a href="mailto:bencyi@me.com" target="_top" class="navbar-item image"><img src=" images/mail.svg"></a>
+                <a href="mailto:bencyi@me.com" target="_top" class="navbar-item image"><img
+                        src="../images/mail.svg"></a>
 
                 <div class="navbar-end">
                     <div class="navbar-item has-dropdown is-hoverable">
@@ -54,45 +56,57 @@
             </div>
         </nav>
     </div>
-        <div class=" is-overlay has-text-centered single-spaced" style="top: 82px;">
-                                <h2 class="title is-1 has-text-white">
-                                    Benjamin Yi</h2>
-                        </div>
-                        <div class="box">
-                            <article class="media">
-                                <div class="media-left">
-                                    <figure class="image is-64x64">
-                                        <img src="images/face.jpg" alt="Image" style="border: 3px solid">
-                                    </figure>
-                                </div>
-                                <div class="media-content double-spaced">
-                                    <div class="content is-spaced">
-                                        <p class="has-text-weight-light" style="line-height: 2">
-                                            <strong>Benjamin Yi</strong> <small>@bencyi</small>
-                                            <small>1m</small>
-                                            <br>
-                                            Hi there! My name is Benjamin Yi, and I am a sophomore at
-                                            the University of
-                                            Maryland, College Park.
-                                            <br>
-                                            I am currently pursuing a Bachelor's Degree in Computer
-                                            Science,
-                                            and plan to minor in Technological Entrepreneurship in the
-                                            near future.
-                                            <br>
-                                            Please reach out if you have any questions! :)
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+<div class=" wrapper">
+                                <header>
+                                    <h1 class="anim">Personal Projects</h1>
+                                    <p class="anim">Multi-User Cross-Platform Gardening App (Unity Game Engine, C#)
+                                        <br>
+                                        App created for the Human-Computer Interaction Lab at the University of
+                                        Maryland,
+                                        College Park.
+                                        The app is created in the Unity Game Engine. 3D assets are imported from the
+                                        unity
+                                        store, as well as oculus integration. Custom C# scripts control player movement.
+                                        Photon networking and C# scripts handle in-game networking for different
+                                        objects.
+                                        Custom models made in blender for the character. The app allows the user with
+                                        the VR
+                                        headset to interact with his/her environment. The PC users can not interact with
+                                        the
+                                        environment.
+                                    </p>
+                                </header>
 
-                        <body class="back-row-toggle splat-toggle">
-                            <div class="rain front-row"></div>
-                            <div class="rain back-row"></div>
-                        </body>
-                        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-                        <script src="Scripts/script.js"></script>
+                                <div class="work">
+                                    <img class="anim" src="../images/garden.png" alt="project img">
+                                </div>
+
+                                <div class="header2">
+                                    <h1 class="anim">Other Projects</h1>
+                                    <p class="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                                        sit necessitatibus, eos
+                                        minima odio, ea ipsam, dicta nihil praesentium soluta fugit aspernatur nisi enim
+                                        libero quos omnis?
+                                        Optio suscipit quibusdam incidunt maiores repudiandae laudantium eaque,
+                                        obcaecati totam architecto aut
+                                        ab?</p>
+                                </div>
+
+                                <div class="work2">
+                                    <img class="anim" src="project5.jpg" alt="project img">
+                                    <img class="anim" src="project6.jpg" alt="project img">
+                                </div>
+
+                                <footer>
+                                    <p>codegrid | Design tutorials</p>
+                                </footer>
+                        </div>
+                        <script type="text/javascript">
+                            window.sr = ScrollReveal();
+                            sr.reveal('.anim');
+                        </script>
+
+                        </script>
 </body>
 
 </html>
