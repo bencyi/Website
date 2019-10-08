@@ -178,6 +178,10 @@ a.navbar-item.is-active,
   flex-shrink: 1;
 }
 
+html {
+  font-family: Poppins;
+}
+
 .navbar-link {
   padding-right: 2.5em;
 }

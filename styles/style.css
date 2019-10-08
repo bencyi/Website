@@ -9,6 +9,10 @@ body {
   background: linear-gradient(to bottom, #202020, #00d1b2);
 }
 
+html {
+  font-family: Poppins;
+}
+
 .rain {
   left: 0;
   width: 100%;
