@@ -13,7 +13,7 @@ html {
 
 body {
     width: 100%;
-    background: #0E0E0E;
+    background: linear-gradient(to bottom, #202020, #00d1b2);
 }
 
 .wrapper {
@@ -58,7 +58,7 @@ nav a:nth-child(2) {
 /* header */
 
 header {
-    margin: 100px 0 200px 120px;
+    margin: 100px 0 0px 40px;
 }
 
 header p {
@@ -95,12 +95,6 @@ header p {
     width: 94%;
 }
 
-/* footer */
-footer p {
-    text-align: center;
-    color: grey;
-    margin: 60px auto;
-}
 
 /* Responsiveness */
 
