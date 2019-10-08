@@ -19,10 +19,6 @@
   z-index: 3;
 }
 
-.navbar-item:hover {
-  background-color: #00d1b2 !important;
-}
-
 .image {
   z-index: 3;
 }
@@ -242,6 +238,10 @@ html {
 }
 
 @media screen and (min-width: 1000px) {
+
+  .navbar-item:hover {
+    background-color: #00d1b2 !important;
+  }
 
   .navbar,
   .navbar-menu,
