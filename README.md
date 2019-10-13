@@ -2,8 +2,7 @@
 
 # personal-website
 
-Beta personal website using HTML and Bulma CSS. Future version will use JS to implement different buttons/functions.
-Formatted for both web and mobile view using Bulma's navbar and burger features.
+Beta personal website using HTML and Bulma CSS. Formatted for both web and mobile view using Bulma's navbar and burger features.
 
 # credits
 
