@@ -1,100 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Benjamin Yi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="https://kit.fontawesome.com/78e587dcb6.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="styles/helpers.css">
-</head>
-
-
-<body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <a href="index.html" class="navbar-item image no-padding" style="color:white   ">
-                    <i class="fas fa-2x fa-home"></i>
+<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    {% for post in site.posts %}
+        <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
+                    <meta itemprop="datePublished" content="{{post.date}}">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        <span class="day">
+                            {{ post.date | date: "%d" }}
+                        </span>
+                        <span class="month-year">
+                            {{ post.date | date: "%B %Y" }}
+                        </span>
+                    </time>
                 </a>
-                <div class="navbar-burger burger"
-                    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active'); document.querySelector('.navbar-burger').classList.toggle('is-active');">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+                <div class="content">
+                    <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
+                    <p class="description">
+                        {{ post.content | strip_html | truncatewords:40 }}
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="link">Read more about {{post.title}}</a>
+                    </p>
 
-            <div class="navbar-menu">
-                <a href="https://www.linkedin.com/in/benjamincyi/" target="_blank" class="navbar-item image">
-                    <img src="images/linkedin.svg">
-                </a>
-
-                <a href=" https://github.com/bencyi" target="_blank" class="navbar-item image"><img
-                        src="images/github.svg"></a>
-
-                <a href="images/Resume PDF.pdf" target="_blank" class="navbar-item image"><img
-                        src="images/resume.svg"></a>
-
-                <a href="mailto:bencyi@me.com" target="_top" class="navbar-item image"><img src=" images/mail.svg"></a>
-
-
-                <div class="navbar-end">
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link has-text-white">More</a>
-                        <div class="navbar-dropdown">
-                            <a href="pages/projects.html" class="navbar-item">Projects</a>
-                            <a href="pages/courses.html" class="navbar-item" ">Skills</a>
-                        </div>
+                    <div class="tags">
+                        {% for tag in post.tags %}
+                            <a href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                        {% endfor %}
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-        <div class=" is-overlay has-text-centered single-spaced" style="top: 82px;">
-                                <h2 class="title is-1 has-text-white">
-                                    Benjamin Yi</h2>
-                        </div>
-                        <div class="box">
-                            <article class="media">
-                                <div class="media-left">
-                                    <figure class="image is-64x64">
-                                        <img src="images/face.jpg" alt="Image" style="border: 3px solid">
-                                    </figure>
-                                </div>
-                                <div class="media-content double-spaced">
-                                    <div class="content is-spaced">
-                                        <p class="has-text-weight-light" style="line-height: 2">
-                                            <strong>Benjamin Yi</strong> <small>@bencyi</small>
-                                            <small>1m</small>
-                                            <br>
-                                            Hi there! My name is Benjamin Yi, and I am a sophomore at
-                                            the University of
-                                            Maryland, College Park.
-                                            <br>
-                                            I am currently pursuing a Bachelor's Degree in Computer
-                                            Science,
-                                            and plan to minor in Technological Entrepreneurship in the
-                                            near future.
-                                            <br>
-                                            Please reach out if you have any questions! :)
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <body class="back-row-toggle splat-toggle">
-                            <div class="rain front-row"></div>
-                            <div class="rain back-row"></div>
-                        </body>
-                        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-                        <script src="Scripts/script.js"></script>
-</body>
-
-</html>
+        </article>
+    {% endfor %}
+</main>
