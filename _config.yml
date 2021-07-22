@@ -1,5 +1,5 @@
 # Site settings
-title: Ben's Portfolio
+title: Benjamin Yi
 description: Benjamin Yi's Personal Website
 baseurl: ''
 url: 'https://bencyi.github.io'
@@ -7,13 +7,11 @@ url: 'https://bencyi.github.io'
 # User settings
 username: Benjamin Yi
 user_description: user_Desc
-user_title: Computer Science Senior @ University of Maryland
-email: bencyi@Me.com
+user_title: Computer Science Senior @ University of Maryland, College Park
+email: bencyi@me.com
 twitter_username: benc_yi
 github_username: bencyi
-gplus_username: gplus_user
-disqus_username: disqus_user
-
+linkedin_username: benjamincyi
 # Build settings
 markdown: kramdown
 highlighter: rouge
