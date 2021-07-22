@@ -1,43 +1,42 @@
 # Site settings
-title: A blog about lorem ipsum dolor sit amet
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
-url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Ben's Portfolio
+description: Benjamin Yi's Personal Website
+baseurl: ''
+url: 'https://bencyi.github.io'
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+username: Benjamin Yi
+user_description: user_Desc
+user_title: Computer Science Senior @ University of Maryland
+email: bencyi@Me.com
+twitter_username: benc_yi
+github_username: bencyi
+gplus_username: gplus_user
+disqus_username: disqus_user
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
-
 # html minify
 compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
+    clippings: all
+    comments: all
+    endings: []
+    profile: false
 
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Home
-    url: /
-  - title: Series
-    url: /series
-  - title: Tags
-    url: /tags
-  - title: About Me
-    url: /about
+    - title: Home
+      url: /
+    - title: Series
+      url: /series
+    - title: Tags
+      url: /tags
+    - title: About Me
+      url: /about
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
