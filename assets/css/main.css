@@ -533,7 +533,7 @@ body.search-overlay:after {
 }
 @media only screen and (max-width: 37.5rem) {
     body.search-overlay:after {
-        background-color: #0562dc;
+        background-color: #white;
     }
 }
 .search-wrapper {
