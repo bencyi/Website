@@ -29,12 +29,12 @@ compress_html:
 links:
     - title: Home
       url: /
-    - title: Series
-      url: /series
-    - title: Tags
-      url: /tags
-    - title: About Me
-      url: /about
+    - title: Courses
+      url: /courses
+    - title: Projects
+      url: /projects
+    - title: Misc
+      url: /misc
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
