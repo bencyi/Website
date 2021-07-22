@@ -255,12 +255,12 @@ h4 {
     padding: 0.938rem;
     margin: 0.125rem;
     border-radius: 50%;
-    border: 0.125rem solid #fff;
+    border: 0.125rem solid black;
     line-height: 0;
     transition: all 0.7s;
 }
 .icons-home a .icon {
-    fill: #fff;
+    fill: black;
     width: 18px;
     height: 18px;
 }
@@ -271,10 +271,10 @@ h4 {
     }
 }
 .icons-home a:hover {
-    background: #fff;
+    background: black;
 }
 .icons-home a:hover .icon {
-    fill: #0562dc;
+    fill: white;
 }
 .down {
     position: absolute;
@@ -293,7 +293,7 @@ h4 {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    fill: #fff;
+    fill: black;
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite;
 }
@@ -335,7 +335,7 @@ a.slideButton,
     cursor: pointer;
     padding: 0.313rem;
     border-radius: 0.188rem;
-    background: #0558c6;
+    background: black;
     width: 2.5rem;
     height: 2.5rem;
     fill: #fff;
@@ -615,7 +615,7 @@ body {
 }
 .header-site,
 .header-post {
-    background: #0562dc;
+    background: #white;
     height: 100%;
 }
 .header-site .content,
@@ -629,6 +629,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    color: black;
 }
 .header-site h1,
 .header-site h2 {
@@ -640,6 +641,7 @@ body {
     line-height: 1;
     margin-top: -80px;
     display: block;
+    color: black;
 }
 @media only screen and (min-width: 37.5rem) {
     .header-site .site-title {
@@ -650,6 +652,7 @@ body {
 .header-site .site-description {
     font-size: 1.25rem;
     display: block;
+    color: black;
     margin: 1.875rem 0;
 }
 @media only screen and (min-width: 37.5rem) {
@@ -881,7 +884,7 @@ body {
     font-size: 1.25rem;
 }
 .post-item .content .description a {
-    color: #0562dc;
+    color: black;
     text-decoration: underline;
 }
 .post-content {
