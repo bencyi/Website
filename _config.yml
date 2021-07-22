@@ -13,7 +13,7 @@ twitter_username: benc_yi
 github_username: bencyi
 linkedin_username: benjamincyi
 # Build settings
-markdown: kramdown
+markdown: kramd own
 highlighter: rouge
 permalink: /:title/
 

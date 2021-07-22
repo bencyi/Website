@@ -335,10 +335,10 @@ a.slideButton,
     cursor: pointer;
     padding: 0.313rem;
     border-radius: 0.188rem;
-    background: black;
+    background: white;
     width: 2.5rem;
     height: 2.5rem;
-    fill: #fff;
+    fill: black;
 }
 .icon-search {
     width: 2.188rem;
@@ -357,7 +357,7 @@ aside {
     padding: 2.5rem 0 0;
     top: 0;
     left: -15rem;
-    background: #3f3f3f;
+    background: black;
     z-index: 20;
     box-shadow: inset -10px -1px 15px -9px rgba(0, 0, 0, 0.5);
 }
