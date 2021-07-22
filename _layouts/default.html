@@ -5,12 +5,14 @@ layout: compress
 <!DOCTYPE html>
 <html lang="pt-br">
     {% include head.html %}
-    <body>
+
+    <body style="background-color:black">
         {% include svg-icons.html %}
         {% include header-default.html %}
-            <section class="content">
-                {{ content }}
-            </section>
+        <section class="content">
+            {{ content }}
+        </section>
         {% include footer.html %}
     </body>
+
 </html>
