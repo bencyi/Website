@@ -9,19 +9,16 @@ layout: compress
     <body style="background-color:black">
         {% include svg-icons.html %}
         {% include header-post.html %}
-        <section class="post" itemscope itemtype="http://schema.org/WebPage">
 
-            <article role="article" id="scroll" class="post-content" role="main" itemprop="mainContentOfPage">
-                {{ content }}
-            </article>
 
-            <a role="button" class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"
-                    style="fill:white">
-                    <use xlink:href="#icon-angle-down"></use>
-                </svg></a>
+        <article role="article" id="scroll" class="post-content" role="main" itemprop="mainContentOfPage"
+            style="background-color: white;">
+            {{ content }}
+        </article>
 
-            {% include footer.html %}
-        </section>
+        <a role="button" class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down" style="fill:white">
+                <use xlink:href="#icon-angle-down"></use>
+            </svg></a>
     </body>
 
 </html>
