@@ -271,12 +271,11 @@ ul.course-list li {
 .course-list li:hover .dropdown-content {
     display: block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: black;
-    min-width: 700px;
+    min-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
