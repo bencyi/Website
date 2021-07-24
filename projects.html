@@ -2,35 +2,66 @@
 layout: minimal
 title: "Projects"
 permalink: /projects/index.html
-description: "Take a look at my beautiful projects."
+description: "Projects uploaded to https://github.com/bencyi"
 ---
 
-<div class="tags">
-{% assign tags_list = site.tags %}
-  {% if tags_list.first[0] == null %}
-    {% for tag in tags_list %}
-        <a data-scroll href="#{{ tag | slugify }}">{{ tag }}</a>
-    {% endfor %}
-  {% else %}
-    {% for tag in tags_list %}
-        <a data-scroll href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-    {% endfor %}
-  {% endif %}
-{% assign tags_list = nil %}
-</div>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-{% for tag in site.tags  %}
-    <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
-    <ul class="post-list">
-        {% assign pages_list = tag[1] %}
-        {% for post in pages_list reversed %}
-            {% if post.title != null %}
-            {% if group == null or group == post.group %}
-            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-        {% assign pages_list = nil %}
-        {% assign group = nil %}
-    </ul>
-{% endfor %}
+    body {
+      background: #333;
+    }
+
+    div {
+      width: 900px;
+      margin: 0 auto;
+      overflow: auto;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li img {
+      float: left;
+      margin: 10px;
+      border: 5px solid #fff;
+
+      -webkit-transition: box-shadow 0.5s ease;
+      -moz-transition: box-shadow 0.5s ease;
+      -o-transition: box-shadow 0.5s ease;
+      -ms-transition: box-shadow 0.5s ease;
+      transition: box-shadow 0.5s ease;
+    }
+
+    li img:hover {
+      -webkit-box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.9);
+      box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.9);
+    }
+  </style>
+</head>
+<div>
+  <ul>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+    <li><a href="#"><img src="http://placehold.it/150x150" /></a></li>
+  </ul>
+</div>
+<script src="/assets/js/main.js"></script>
